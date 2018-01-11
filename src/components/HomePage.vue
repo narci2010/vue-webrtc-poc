@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     getRooms () {
-      axios.get('http://localhost:3000/rooms')
+      axios.get('http://x.fajarpatappari.tk:3000/rooms')
       .then(({data}) => {
         console.log(data, 'rooms')
         this.rooms = data
@@ -33,7 +33,7 @@ export default {
       .catch(console.error)
     },
     createRoom(){
-      axios.post('http://localhost:3000/rooms', {
+      axios.post('http://x.fajarpatappari.tk:3000/rooms', {
         active: 1,
         questions: [
           "pocong",

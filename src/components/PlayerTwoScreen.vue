@@ -24,12 +24,13 @@ export default {
     localVideoEl: this.$refs.PlayerTwoLocalVideo,
     // the id/element dom element that will hold remote videos
     remoteVideosEl: "",
-    autoRequestMedia: true,    
+    autoRequestMedia: true,
+    url: 'http://x.fajarpatappari.tk:8888',
     })
   },
   methods: {
     getRoom(){
-      axios.get('http://localhost:3000/rooms/'+this.roomId)
+      axios.get('http://x.fajarpatappari.tk:3000/rooms/'+this.roomId)
       .then(({data}) => {
         this.room = data
       })

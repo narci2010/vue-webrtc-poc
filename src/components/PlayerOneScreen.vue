@@ -1,7 +1,7 @@
 <template>
   <div>
       <video width="200" ref="PlayerOneLocalVideo" class="remote"></video>
-      <video width="500" ref="PlayerTwoRemoteVideo" class="remote"></video>
+      <video width="500" ref="PlayerTwoRemoteVideox" class="remote"></video>
   </div>
 </template>
 
@@ -20,12 +20,13 @@ export default {
     this.webrtc = new SimpleWebRTC({
     localVideoEl: this.$refs.PlayerOneLocalVideo,
     remoteVideosEl: "",
-    autoRequestMedia: true,    
+    autoRequestMedia: true,
+    url: 'http://x.fajarpatappari.tk:8888',
     })
   },
   methods: {
     getRoom(){
-      axios.get('http://localhost:3000/rooms/'+this.roomId)
+      axios.get('http://x.fajarpatappari.tk:3000/rooms/'+this.roomId)
       .then(({data}) => {
         console.log(data)
         this.doWaiting()
@@ -41,7 +42,7 @@ export default {
       console.log('Waiting for player two.......')
       this.webrtc.on("videoAdded", (video, peer) => {
         console.log("video added", peer);
-        this.$refs.PlayerTwoRemoteVideo.srcObject = peer.stream;
+        this.$refs.PlayerTwoRemoteVideox.srcObject = peer.stream;
         this.connectionHandler(peer);
         setTimeout(() => {
           console.log('Connected')
