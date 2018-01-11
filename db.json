@@ -1,0 +1,77 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "player1": "azahari",
+      "player2": "fajar",
+      "active": 1,
+      "questions": [
+        "ayam",
+        "kucing",
+        "serigala"
+      ]
+    },
+    {
+      "id": 2,
+      "player1": "aang",
+      "player2": "azahary",
+      "active": 2,
+      "questions": [
+        "pocong",
+        "kuntilanak",
+        "tuyul",
+        "leak"
+      ]
+    },
+    {
+      "active": 1,
+      "questions": [
+        "pocong",
+        "kuntilanak",
+        "tuyul",
+        "leak"
+      ],
+      "id": 3
+    },
+    {
+      "active": 1,
+      "questions": [
+        "pocong",
+        "kuntilanak",
+        "tuyul",
+        "leak"
+      ],
+      "id": 4
+    },
+    {
+      "active": 1,
+      "questions": [
+        "pocong",
+        "kuntilanak",
+        "tuyul",
+        "leak"
+      ],
+      "id": 5
+    },
+    {
+      "active": 1,
+      "questions": [
+        "pocong",
+        "kuntilanak",
+        "tuyul",
+        "leak"
+      ],
+      "id": 6
+    },
+    {
+      "active": 1,
+      "questions": [
+        "pocong",
+        "kuntilanak",
+        "tuyul",
+        "leak"
+      ],
+      "id": 7
+    }
+  ]
+}
